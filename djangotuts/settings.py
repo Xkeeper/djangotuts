@@ -1,6 +1,9 @@
 import os
 import django
 
+import django.template
+django.template.add_to_builtins('django.templatetags.future')
+
 SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
 
 # Django settings for djangotuts project.

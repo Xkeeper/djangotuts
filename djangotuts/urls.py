@@ -5,6 +5,8 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
+
+	url(r'^polls/', include('polls.urls', namespace="polls")),
     # Examples:
     # url(r'^$', 'djangotuts.views.home', name='home'),
     # url(r'^djangotuts/', include('djangotuts.foo.urls')),
